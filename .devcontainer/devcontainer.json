@@ -1,0 +1,11 @@
+{
+  "name": "AWS Learning with Floci",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:3": {
+      "dockerDashComposeVersion": "v2"
+    }
+  },
+  "postCreateCommand": "curl -fsSL https://floci.io/install.sh | sh"
+}
